@@ -23,7 +23,7 @@ button {
 }
 /*------App------*/
 .app {
-  background-Image: url(../public/assets/Fondos2/fondo2.png);
+  /* background-Image: url(../public/assets/Fondos2/fondo2.png); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@ button {
 }
 
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .app__title{
     width: 280px; 
   }
@@ -83,7 +83,7 @@ button {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .text {
     width: 600px;
     height: 270px;
@@ -91,7 +91,7 @@ button {
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
   .text {
     justify-content: center;
 
