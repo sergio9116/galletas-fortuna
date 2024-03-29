@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Rakkas", serif;
+
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+}
+/*------App------*/
+.app {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+.app__title{
+  width: 500px;
+  text-align: center;
+  text-shadow: 2px 2px orange,
+              2px -2px orange,
+              -2px 2px orange,
+              -2px -2px orange;
+  font-size: 50px;
+
+}
+.text {
+  background: url(../public/assets/Fondos2/rectangle1.svg);
+  background-size: cover;
+  background-position: center;
+  width: 650px;
+  height: 285px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.text p {
+  text-align: center;
+  padding: 7px 14px;
+}
+.btn {
+  background-color: orange;
+  padding: 7px 14px;
+  border-radius: 7px;
+  transition: transform .5s;
+  font-size: 22px;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
+
+
+@media (max-width: 320px) {
+  .app__title{
+    width: 280px; 
+  }
+  .text {
+    width: 280px;
+    height: 275px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text {
+    width: 600px;
+    height: 270px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .text {
+    justify-content: center;
+
+  }
+}
+
+
+
